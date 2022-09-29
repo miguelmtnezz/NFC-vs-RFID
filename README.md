@@ -29,13 +29,13 @@ La tecnologia RFID consta de la siguientes partes:
 - Middleware RFID, proporciona los medios de proceso y almacenamiento de datos.
 
 
->_Fuente Wikipedia [NFC](https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_de_campo_cercano) y [RFID](https://es.wikipedia.org/wiki/RFID)
+>_Fuente Wikipedia [NFC](https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_de_campo_cercano) y [RFID](https://es.wikipedia.org/wiki/RFID)  
 Consultado el 28/09/2022_
 ---
 
 ## HACKING ETICO
 
-Ahora en el siguiente articulo se aplicaran ejemplos de uso y algunos tipicos ataques sobre tarjetas NFC/RFID. Para ello has de tener un dispositivo movil que incluya tecnologia NFC. Y en el accederemos a la Play Store para descargarnos la siguiente aplicacion.
+Ahora en el siguiente articulo se aplicaran ejemplos de uso y algunos tipicos ataques sobre tarjetas NFC/RFID. Para ello has de tener una tarjeta y dispositivo movil que incluya tecnologia NFC. Y en el accederemos a la Play Store para descargarnos la siguiente aplicacion.
 
 https://play.google.com/store/apps/details?id=de.syss.MifareClassicTool
 
@@ -43,3 +43,41 @@ https://play.google.com/store/apps/details?id=de.syss.MifareClassicTool
 
 Es una simple aplicacion para leer, escribir y analizar etiquetas NFC/RFID.
 
+Una vez descargado iniciaremos la aplicacion y nos encontraremos con el siguiente menu:
+
+img
+
+En ella podemos ver un total de 6 opciones:
+ - Leer etiqueta
+   - Las etiquetas o tarjetas para ser leidas, primero debemos de conocer sus claves A y B. La aplicacion contiene dos ficherosque actuan como diccionario de claves estandar. En caso de ni conseguir mapear una de las dos claves, la aplicacion omitira la lectura de dicho sector.
+
+img
+
+ - Esribir etiqueta
+   - Una vez leida nuestra tarjeta o etiqueta, podemos modificar cada uno de los sectores y bloques que lo componen, modificando la integridad de sus datos a nuestra necesidad.
+
+img
+
+ - Editar/Analizar dumpeo
+   - Sirve como editor de cualquier etiqueta o tarjeta que hayamos guardado
+
+img
+
+ - Editar/Analizar archivo de claves
+   - Una vez crackeado las claves de nuestra tarjeta se guardara en un fichero de clave, para su proxima vez y no tener que volver a mapear cada clave desde 0
+
+img
+
+ - Herramientas, nos ofrece una serie de utilidades para el manejo de datos e informacion
+   - Mostrar informacion de la etiqueta
+   - Clone UID
+   - Compare Dumps
+   - De/codificador de condiciones de acceso
+   - De/codificador de Value Block
+   - BCC Calculator (Block Check Character)
+   - Convert Data
+   - UID Log
+   - Gestor de archivos
+ - Ayuda e info  
+
+### Metodos de Ataque  
