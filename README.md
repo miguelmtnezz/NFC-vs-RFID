@@ -45,28 +45,28 @@ Es una simple aplicacion para leer, escribir y analizar etiquetas NFC/RFID.
 
 Una vez descargado iniciaremos la aplicacion y nos encontraremos con el siguiente menu:
 
-img
+![Mifare menu|50](images/img-00.jpeg)
 
 En ella podemos ver un total de 6 opciones:
  - Leer etiqueta
    - Las etiquetas o tarjetas para ser leidas, primero debemos de conocer sus claves A y B. La aplicacion contiene dos ficherosque actuan como diccionario de claves estandar. En caso de ni conseguir mapear una de las dos claves, la aplicacion omitira la lectura de dicho sector.
 
-img
+![Primera imagen|50](images/img-01.jpeg)
 
  - Esribir etiqueta
    - Una vez leida nuestra tarjeta o etiqueta, podemos modificar cada uno de los sectores y bloques que lo componen, modificando la integridad de sus datos a nuestra necesidad.
 
-img
+![Segunda imagen|50](images/img-02.jpeg)
 
  - Editar/Analizar dumpeo
    - Sirve como editor de cualquier etiqueta o tarjeta que hayamos guardado
 
-img
+![Tercera imagen|50](images/img-03.jpeg)
 
  - Editar/Analizar archivo de claves
    - Una vez crackeado las claves de nuestra tarjeta se guardara en un fichero de clave, para su proxima vez y no tener que volver a mapear cada clave desde 0
 
-img
+![Cuarta imagen|50](images/img-04.jpeg)
 
  - Herramientas, nos ofrece una serie de utilidades para el manejo de datos e informacion
    - Mostrar informacion de la etiqueta
@@ -81,3 +81,12 @@ img
  - Ayuda e info  
 
 ### Metodos de Ataque  
+- **Darkside attack**  
+  Este ataque es factible en caso de no conocer ninguna clave de la tarjeta en cuestion, es decir, cuando no hemos podido leer ningun solo sector.  
+  Basicamente trata de explotar un debilidad en el cifrado.
+
+- **Hardnested Attack**  
+  Este ataque explota la vulnerbilidad criptografica de CRYPTO1 y al igual que Nested, necesita de al menos del conocimineto unas del par de claves.
+
+- **Clonado**  
+  Como su nombre indica es el proceso de volcado de datos contenidos en una tarjeta a otra mediante metodo de espejo.    
